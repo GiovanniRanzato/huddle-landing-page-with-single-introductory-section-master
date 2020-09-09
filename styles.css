@@ -1,0 +1,124 @@
+/* GENERAL STYLES  */
+:root{
+    /* FONTS */
+    --heading-font-family: 'Poppins', sans-serif;
+    --body-font-family: 'Open Sans', sans-serif;
+
+    --heading-font-weight-regular: 400;
+    --heading-font-weight-bold: 700;
+    --body-font-weight-regular: 400;
+    /* COLOR */
+    --primary: hsl(257, 40%, 49%);
+    --primary-shadow: hsl(257, 40%, 40%);
+    --shadow: 0px 2px 4px 3px var(--primary-shadow);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--body-font-family);
+    font-weight: var(--body-font-weight-regular);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+li {
+    list-style: none;
+    list-style-type: none;
+}
+
+/* TYPOGRAPHY */
+.heading {
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight-regular);
+
+}
+.heading-bold{
+    font-weight: var(--heading-font-weight-bold);
+}
+
+
+.hero-section {
+    min-height: 100vh;
+    width: 100%;
+    background: var(--primary);
+    background-image: url("./images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.container{
+    min-height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-self: start;
+    width: 120px;
+}
+.visual {
+    max-width: 295px;
+    min-height: 212px;
+    background-image: url("./images/illustration-mockups.svg");
+    background-size: 100%;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.copy{
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+}
+.title {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+.message{
+    margin-bottom: 25px;
+}
+.cta{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    color: var(--primary);
+    font-size: 12px;
+}
+.social{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.social-icon{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 0 8px;
+}
+.social-icon img {
+    height: 12px;
+}
+
+
+
+
+/* FOOTER ATTRIBUTION */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

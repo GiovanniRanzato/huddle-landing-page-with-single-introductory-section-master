@@ -8,26 +8,41 @@
   
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- STYLES  -->
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CUSTOM CLASSES -->
+  <link rel="stylesheet" href="styles.css" >
 </head>
 <body>
-
-  Build The Community Your Fans Will Love
-
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Register
-
+  <section class="hero-section">
+    <div class="container">
+      <div class="heading">
+        <img class="logo" src="images/logo.svg" alt="logo"/>
+      </div>
+      <div class="visual">
+      </div>
+      <div class="copy">
+        <h1 id="title" class="title heading heading-bold"></h1>
+        <div id="message" class="message"></div>
+        <div id="cta" class="cta"></div>
+      </div>
+        <ul class="social">
+          <li class="social-icon"><a id="link-0"><img id="icon-0" /></a></li>
+          <li class="social-icon"><a id="link-1"><img id="icon-1" /></a></li>
+          <li class="social-icon"><a id="link-2"><img id="icon-2" /></a></li>
+        </ul>
+    </div>
+    </div>
+  </section>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.linkedin.com/in/giovanni-ranzato-48713b12b/">Giovanni Ranzato</a>.
     </p>
   </footer>
 </body>
+<script src="./functions.js" ></script>
 </html>
